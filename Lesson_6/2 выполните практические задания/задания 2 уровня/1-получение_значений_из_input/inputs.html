@@ -25,11 +25,10 @@
 
         let span = document.querySelector('span');
         let fromEl = document.getElementById('from');
-        //let fromE = fromEl.dataText.
-        console.log(fromEl);
-        //fromEl.onchange = function (event) {
-        //event(fromEl.event.target.value)
-        };
+        fromEl.addEventListener('change', function (event) {
+            let input = event.target.value;
+            span.innerText = input;
+        });
     </script>
 </body>
 
