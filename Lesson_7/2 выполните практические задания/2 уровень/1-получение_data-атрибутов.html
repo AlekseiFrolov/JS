@@ -23,13 +23,14 @@
 
     <script>
         'use strict';
+        let btn = document.querySelectorAll('button');
+        btn.forEach((element) => {
+            element.addEventListener('click', () => {
+                console.log(element.dataset)
+            })
+        });
+    </script>
 
-        let button = document.querySelectorAll('button');
-        button.addEventListener(function (button) {
-                console.log(dataset);
-            }) <
-            /script <
-            /body>
+</body>
 
-            <
-            /html>
+</html>>

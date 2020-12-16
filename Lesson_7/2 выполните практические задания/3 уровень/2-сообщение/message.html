@@ -26,7 +26,21 @@
     -->
 
     <script>
-        
+        'use strict';
+
+        let btn = document.querySelector('button');
+        let message = document.querySelector('.message');
+        let mySound = new Audio('notification.mp3');
+        let i = message.clientHeight;
+        btn.addEventListener('click', (event) => {
+            mySound.play();
+            message.style.top = 'calc(80vh + 20px)';
+            /* if (message.classList.contains('top')) {
+                message.classList.remove('top')
+            } else {
+                message.classList.add('top')
+            }; */
+        });
     </script>
 </body>
 
