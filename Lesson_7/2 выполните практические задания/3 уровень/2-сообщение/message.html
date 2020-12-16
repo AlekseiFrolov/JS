@@ -34,12 +34,7 @@
         let i = message.clientHeight;
         btn.addEventListener('click', (event) => {
             mySound.play();
-            message.style.top = 'calc(80vh + 20px)';
-            /* if (message.classList.contains('top')) {
-                message.classList.remove('top')
-            } else {
-                message.classList.add('top')
-            }; */
+            message.style.transform = `translateY(-${message.clientHeight+40}px)`;
         });
     </script>
 </body>

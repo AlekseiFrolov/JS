@@ -23,9 +23,15 @@
          * @param {number} percent величина процента от 0 до 100.
          */
         function changeProgress(percent) {
-            div.style.background = `linear-gradient(90deg, rgba(38,255,162,1) ${percent}%, rgba(255,255,255,1) ${percent}%)`;
+            div.style.background =
+                `linear-gradient(90deg, rgba(38,255,162,1) ${percent}%, rgba(255,255,255,1) ${percent}%)`;
         }
 
+        for (let i = 0; i <= 100; i++) {
+            setTimeout(() => {
+                changeProgress(i);
+            }, 1000);
+        };
         /* 
         Вам нужно в цикле for создать отложенные вызовы с помощью setTimeout. Т.е. в цикле должны
         быть вызовы функции setTimeout.
@@ -35,8 +41,6 @@
         можете также добавить какой-нибудь коэффициент, чтобы подобрать желаемую скорость
         заполнения прогресс-бара.
         */
-        
-
     </script>
 </body>
 
